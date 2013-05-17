@@ -1,14 +1,7 @@
-package eschewobfuscation;
+package com.eschewobfuscation;
 
-
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.google.common.collect.Maps;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * Store widget specific configuration in a custom subclass for each widget

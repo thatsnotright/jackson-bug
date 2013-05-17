@@ -1,13 +1,13 @@
 package com.eschewobfuscation
 
-import eschewobfuscation.OtherWidgetConfig
+import com.eschewobfuscation.OtherWidgetConfig
 import spock.lang.*
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.MapperFeature
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.SerializationFeature
-import eschewobfuscation.Widget
+import com.eschewobfuscation.Widget
 
 /**
  *

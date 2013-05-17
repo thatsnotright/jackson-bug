@@ -1,4 +1,4 @@
-package eschewobfuscation;
+package com.eschewobfuscation;
 
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
