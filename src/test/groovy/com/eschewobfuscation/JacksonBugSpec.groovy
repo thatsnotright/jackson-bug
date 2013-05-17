@@ -80,6 +80,7 @@ class JacksonBugSpec extends Specification {
         assert w.settings.someField == "a value"
         assert w.settings.sprockets.size() == 2
         assert w.settings.sprockets.first().name == "Sprocket A"
+        assert w.settings.sprockets.first() instanceof Sprocket
         String des = objectMapper.writeValueAsString(w)
 
         assert des.count("type") == 1
