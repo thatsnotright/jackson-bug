@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.collect.Maps;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,7 +16,7 @@ import java.util.Map;
  * @author Rob Elsner
  */
 public class OtherWidgetConfig extends WidgetConfig {
-	private Map<String, Object> settings = Maps.newHashMap();
+	private List<Sprocket> sprocketList;
 
 	public OtherWidgetConfig() {
 		//  nothing to do!
@@ -31,4 +32,11 @@ public class OtherWidgetConfig extends WidgetConfig {
 		this.someField = someField;
 	}
 
+	public List<Sprocket> getSprockes() {
+		return sprocketList;
+	}
+
+	public void setSprockes(List<Sprocket> sprocketList) {
+		this.sprocketList = sprocketList;
+	}
 }

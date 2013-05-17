@@ -66,7 +66,8 @@ class JacksonBugSpec extends Specification {
     "allow_fullscreen": false,
     "infinite_scroll": false,
     "disable_auto_load": false,
-    "someField": "a value"
+    "someField": "a value",
+    "sprockets": [{"name":"Sprocket A"},{"name":"Sprocket B"}]
   }
 }"""
         when:
@@ -79,6 +80,8 @@ class JacksonBugSpec extends Specification {
 
         assert w.settings instanceof OtherWidgetConfig
         assert w.settings.someField == "a value"
+        assert w.settings.sprockets.size() == 2
+        assert w.settings.sprockets.first().name == "Sprocket A"
 
         String des = objectMapper.writeValueAsString(w)
 
