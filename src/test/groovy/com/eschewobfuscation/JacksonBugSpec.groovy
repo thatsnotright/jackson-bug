@@ -43,7 +43,6 @@ class JacksonBugSpec extends Specification {
   }
 }"""
         when:
-        println json
         Widget w = objectMapper.readValue(json, Widget)
 
         then:
@@ -71,7 +70,6 @@ class JacksonBugSpec extends Specification {
   }
 }"""
         when:
-        println json
         Widget w = objectMapper.readValue(json, Widget)
 
         then:
@@ -82,7 +80,6 @@ class JacksonBugSpec extends Specification {
         assert w.settings.someField == "a value"
         assert w.settings.sprockets.size() == 2
         assert w.settings.sprockets.first().name == "Sprocket A"
-
         String des = objectMapper.writeValueAsString(w)
 
         assert des.count("type") == 1

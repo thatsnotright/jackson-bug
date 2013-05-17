@@ -25,11 +25,11 @@ public class OtherWidgetConfig extends WidgetConfig {
 		this.someField = someField;
 	}
 
-	public List<Sprocket> getSprockes() {
+	public List<Sprocket> getSprockets() {
 		return sprocketList;
 	}
 
-	public void setSprockes(List<Sprocket> sprocketList) {
+	public void setSprockets(List<Sprocket> sprocketList) {
 		this.sprocketList = sprocketList;
 	}
 }
